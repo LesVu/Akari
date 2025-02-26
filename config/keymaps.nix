@@ -71,6 +71,16 @@
       };
     }
 
+    {
+      mode = ["i" "v"];
+      key = "<C-e>";
+      action = "<Esc>";
+      options = {
+        silent = true;
+        desc = "Remap of Escape to Control-e";
+      };
+    }
+
     # Quit/Session
     {
       mode = "n";

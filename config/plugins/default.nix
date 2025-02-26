@@ -40,7 +40,7 @@
     ./lang/html.nix
     ./lang/json.nix
     ./lang/lua.nix
-    ./lang/markdown.nix
+    # ./lang/markdown.nix
     ./lang/nix.nix
     ./lang/python.nix
     ./lang/shell.nix
@@ -51,7 +51,8 @@
     ./treesitter/treesitter-textobjects.nix
 
     ./ui/alpha.nix
-    ./ui/bufferline.nix
+    # ./ui/bufferline.nix
+    ./ui/barbar.nix
     ./ui/general.nix
     ./ui/flash.nix
     ./ui/indent-blankline.nix
@@ -63,10 +64,11 @@
     ./ui/toggleterm.nix
     ./ui/ufo.nix
 
+    ./util/comment.nix
     ./util/colorizer.nix
     ./util/compiler.nix
     ./util/debugprint.nix
-    ./util/kulala.nix
+    # ./util/kulala.nix
     ./util/mini.nix
     ./util/nvim-autopairs.nix
     ./util/nvim-surround.nix

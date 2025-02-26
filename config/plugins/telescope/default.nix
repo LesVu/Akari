@@ -16,10 +16,20 @@
         };
       };
 
+      settings.pickers.find_files.hidden = true;
       settings.defaults = {
         prompt_prefix = "   ";
         color_devicons = true;
         set_env.COLORTERM = "truecolor";
+
+        file_ignore_patterns = [
+          "^.git/"
+          "^.mypy_cache/"
+          "^__pycache__/"
+          "^output/"
+          "^data/"
+          "%.ipynb"
+        ];
 
         mappings = {
           i = {
@@ -71,15 +81,15 @@
           action = "undo";
           options.desc = "Search Undo";
         };
-        "<leader><space>" = {
-          action = "find_files";
-          options.desc = "Find project files";
-        };
+        # "<leader><space>" = {
+        #  action = "find_files";
+        #  options.desc = "Find project files";
+        #};
         "<leader>ff" = {
           action = "find_files hidden=true";
           options.desc = "Find project files";
         };
-        "<leader>/" = {
+        "<leader>fg" = {
           action = "live_grep";
           options.desc = "Grep (root dir)";
         };

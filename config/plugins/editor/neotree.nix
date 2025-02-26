@@ -35,6 +35,7 @@
 
     window.mappings = {
       "<space>" = "none";
+      "<bs>" = "none";
     };
   };
 
@@ -42,7 +43,7 @@
     {
       mode = "n";
       key = "<leader>E";
-      action = "<cmd>Neotree toggle<cr>";
+      action = "<cmd>Neotree<cr>";
       options = {
         silent = true;
         desc = "Explorer NeoTree (root dir)";

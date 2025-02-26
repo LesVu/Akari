@@ -7,7 +7,7 @@
       vim.fn.sign_define("diagnosticsigninfo", { text = " ", texthl = "diagnosticinfo", linehl = "", numhl = "" })
     '';
 
-    # feature that enhances the way Neovim loads and executes Lua modules, 
+    # feature that enhances the way Neovim loads and executes Lua modules,
     # offering improved performance and flexibility.
     luaLoader.enable = true;
 
@@ -21,7 +21,7 @@
 
       # Enable relative line numbers
       number = true;
-      relativenumber = true;
+      relativenumber = false;
 
       # Tab spacing 2 spaces
       tabstop = 2;
@@ -66,7 +66,7 @@
       # Reduce which-key timeout to 250s
       timeoutlen = 250;
 
-      scrolloff = 8; # Will never have less than 8 characters as you scroll down
+      scrolloff = 12; # Will never have less than 8 characters as you scroll down
       mouse = "a"; # Mouse
 
       # Set encoding type

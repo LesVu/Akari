@@ -15,6 +15,10 @@
           left = "";
           right = "";
         };
+        component_separators = {
+          left = "";
+          right = "";
+        };
       };
       extensions = [ "fzf" ];
       sections = {
@@ -62,7 +66,7 @@
 
           local bufname = vim.fn.bufname(vim.fn.bufnr())
           local sep = package.config:sub(1, 1)
-          
+
           local root = (opts.relative == "root") and vim.fn.getcwd() or vim.fn.fnamemodify(bufname, ":h")
           local cwd = vim.fn.getcwd()
 
