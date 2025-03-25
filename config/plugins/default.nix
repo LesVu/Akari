@@ -11,18 +11,17 @@
 
     ./debug/dap.nix
 
+    ./editor/lz-n.nix
     ./editor/neotree.nix
     ./editor/undotree.nix
     ./editor/whichkey.nix
+    ./editor/yanky.nix
     ./editor/yazi.nix
 
     ./theme
     ./luasnip
 
-    ./snacks/bigfile.nix
-    ./snacks/bufdelete.nix
-    ./snacks/gitbrowse.nix
-    ./snacks/lazygit.nix
+    ./snacks
 
     ./telescope
 
@@ -75,6 +74,6 @@
     ./util/plenary.nix
     ./util/persistence.nix
     ./util/project-nvim.nix
-    ./util/snacks.nix
+    ./util/package-info.nix
   ];
 }

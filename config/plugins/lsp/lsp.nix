@@ -1,17 +1,25 @@
 {
   plugins = {
-    lsp-signature.enable = true;
-    fidget.enable = true;
-
     lsp = {
       enable = true;
-      servers.typos_lsp.enable = true;
+      inlayHints = true;
+
+      servers.typos_lsp = {
+        enable = true;
+        extraOptions = {
+          init_options.diagnosticSeverity = "Hint";
+        };
+      };
+
       keymaps.lspBuf = {
         "<c-k>" = "signature_help";
         "gi" = "implementation";
       };
     };
     lint.enable = true;
+
+    lsp-signature.enable = true;
+    lsp-lines.enable = true;
   };
 
   keymaps = [
